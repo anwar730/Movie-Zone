@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+}
+
+.nav-bar{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #000;
+    color:white;
+}
+.logo{
+    color:#E50914;
+}
+.nav-items ul{
+    display: flex;
+    gap: 80px;
+    list-style: none;
+}
+.home{
+    
+    color: white;
+    background-color:#E50914;
+    padding: 5px 10px;
+    border-radius: 20px;
+    border: none;
+}
+.user-icon{
+    display: flex;
+    gap:20px
+}
+.user-icon p{
+    padding-top: 15px;
+}
+.user-icon img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
