@@ -67,3 +67,33 @@ body{
 .desc{
     font-size: 50px;
 }
+.genre{
+    height: 700px;
+    
+}
+#gen{
+    color: #E50914;
+    font-size: 50px;
+    margin-top: 80px;
+    padding-left: 800px;
+    background-color: #171717;
+}
+.gen-types img{
+    width:300px;
+    height: 300px;
+    border-radius: 10px;
+    border-style: none;
+}
+.gen-types ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    padding-top: 120px;
+    
+}
+.gen-desc {
+    text-align: center;
+    color: #E50914;
+    font-size: 28px;
+    padding-top: 20px;
+}
