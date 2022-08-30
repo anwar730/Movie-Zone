@@ -98,6 +98,36 @@ body{
     padding-top: 20px;
 }
 
-
+#trend{
+    color: #E50914;
+    font-size: 50px;
+    margin-top: 80px;
+    padding-left: 780px;
+    background-color: #171717;
+}
+.trend-list{
+    list-style: none;
+    padding-top: 100px;
+    
+}
+.trend-list img{
+    border-radius: 20px;
+}
+.trend-list h4{
+    padding-top: 40px;
+    color: #E50914;
+    font-size: 25px;
+}
+.trend-list p{
+    line-height: 30px;
+    padding-top: 15px;
+    font-size: 20px;
+}
+.tr-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 100px;
+}
 
 
