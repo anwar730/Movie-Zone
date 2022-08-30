@@ -1,6 +1,10 @@
 *{
     margin: 0;
 }
+body{
+    background-color: #000;
+    color: white;
+}
 
 .nav-bar{
     height: 100px;
@@ -17,6 +21,7 @@
     display: flex;
     gap: 80px;
     list-style: none;
+    font-size: 19px;
 }
 .home{
     
@@ -37,4 +42,28 @@
     height: 50px;
     width: 50px;
     border-radius: 50%;
+}
+
+.landing-container{
+    height: 900px;  
+    background-image: url(../assets/images/lpg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}    
+.landing-content p {
+    color: white;
+    line-height: 50px;
+    padding: 50px 150px;
+
+    
+
+}
+#main-desc{
+    color: #E50914;
+    font-size: 80px;
+    padding-top: 200px;
+}
+.desc{
+    font-size: 50px;
 }
