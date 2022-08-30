@@ -157,6 +157,7 @@ body{
 .subscription-boxes h4{
     color: #E50914;
     font-size: 24px;
+    text-align: center;
 }
 .subscription-boxes h3{
     text-align: center;
@@ -176,4 +177,7 @@ body{
     background-color: #171717;
     padding: 30px 150px;
     border-radius: 40px;
+}
+i{
+    color: #E50914;
 }
