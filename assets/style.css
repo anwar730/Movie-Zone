@@ -167,7 +167,13 @@ body{
     background-color: #171717;
     padding: 30px 150px;
     border-radius: 40px;
+    
 }
+.subscription-boxes :hover{
+    width: 200px;
+    height: 490px;
+    transition-delay: 0.20s;
+}   
 .standard{
     background-color: #171717;
     padding: 30px 150px;
