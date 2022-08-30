@@ -66,6 +66,7 @@ body{
 }
 .desc{
     font-size: 50px;
+    
 }
 .genre{
     height: 690px;
@@ -129,5 +130,41 @@ body{
     justify-content: space-around;
     padding-top: 100px;
 }
+.subscription{
+    height: 700px;
+    margin-top: 120px;
+    background-image: url(./images/sub.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#sub-title{
+    color: #E50914;
+    font-size: 50px;
+    margin-top: 80px;
+    padding-left: 800px;
+    background-color: #171717;
+}
+.subscription-boxes{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 100px;
+    line-height: 50px;
+    
+}
+.subscription-boxes h4{
+    color: #E50914;
+    font-size: 24px;
+}
+.subscription-boxes h3{
+    text-align: center;
+}
 
+.basic{
+    background-color: #171717;
+    padding: 30px 150px;
+    border-radius: 40px;
+}
 
