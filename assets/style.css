@@ -188,7 +188,7 @@ i{
     color: #E50914;
 }
 .email-box{
-    height: 400px;
+    height: 500px;
     padding-top: 100px;
     text-align: center;
     line-height: 40px;
@@ -218,4 +218,16 @@ i{
     color: white;
     border: none;
     border-radius: 4px;
+}
+.footer{
+    height: 400px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer-links-right li ,.footer-links-left li{
+    list-style: none;
+    line-height: 40px;
+    font-size: 25px;
+    
 }
