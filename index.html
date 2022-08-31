@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/style.css">
     <script src="https://kit.fontawesome.com/12991e9c0a.js" crossorigin="anonymous"></script>
+    <script src="./assets/index.js"></script>
     <title>Movie-Zone</title>
 </head>
 <body>
@@ -14,13 +15,17 @@
             <img src="./assets/images/movie logo.jpeg">
         </div>
         <div class="nav-items">
-            <ul>
-                <li class="home">Home</li>
+                <a href="#" class="home">Home</a>
+                <a href="#genr">Genre</a>
+                <a href="#tr">Trending</a>
+                <a href="#subs">Subscriptions</a>
+                <a href="#about">About</a>
+                <!-- <li class="home"><a href="#"></a>Home</li>
                 <li>Trending</li>
                 <li>Genre</li>
                 <li>Subscription</li>
-                <li>About</li>
-            </ul>
+                <li>About</li> -->
+            
         </div>
         <div class="user-icon">
             <img src="./assets/images/profile.webp" alt="user icon">
@@ -34,14 +39,11 @@
                The perfect friend for all your movie needs.</p>
         </div>
     </div>
-    <div class="genre">
+    <div class="genre" id="genr">
         <h2 id="gen">GENRE</h2>
         <div class="gen-types">
             <ul>
-                <li><div class="action">
-                    <img class="gen-img" src="./assets/images/action.jpg">
-                    <p class="gen-desc"id="act">Action</p>
-                </div></li>
+                <li><img class="gen-img" src="./assets/images/action.jpg"><p class="gen-desc">Action</p></li>
                 <li><img  class="gen-img"src="./assets/images/romance.jpg"><p class="gen-desc">Romance</p></li>
                 <li><img  class="gen-img"src="./assets/images/sci-fi.jpg"><p  class="gen-desc">Science-Fiction</p></li>
                 <li><img  class="gen-img"src="./assets/images/family.webp"><p class="gen-desc">Family</p></li>
@@ -51,17 +53,17 @@
         
     </div>
 
-    <div class="trending">
+    <div class="trending" id="tr">
         <h2 id ="trend">TRENDING NOW</h2>
         <div class="tr-list">
 
         </div>
         
     </div>
-    <div class="subscription">
+    <div class="subscription"id="subs">
         <h4 id="sub-title">Subscriptions</h4>
         <div class="subscription-boxes">
-            <div class="basic">
+            <div class="sub-box">
                 <h4>Basic</h4>
                 <p>HD available &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<span><i class="fa-solid fa-xmark"></i></span></p>
                 <p>High resolution &nbsp &nbsp &nbsp &nbsp<span><i class="fa-solid fa-xmark"></i></span></p>
@@ -73,7 +75,7 @@
                 <h3>2.99$</h3>
                 
             </div>
-            <div class="standard">
+            <div class="sub-box">
                 <h4>Standard</h4>
                 <p>HD available &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<span><i class="fa-solid fa-xmark"></i></span></p>
                 <p>High resolution &nbsp &nbsp &nbsp &nbsp<span><i class="fa-solid fa-check"></i></span></p>
@@ -85,7 +87,7 @@
                 <h3>5.99$</h3>
                 
             </div>
-            <div class="premium">
+            <div class="sub-box">
                 <h4>Premium</h4>
                 <p>HD available &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<span><i class="fa-solid fa-check"></i></span></p>
                 <p>High resolution &nbsp &nbsp &nbsp &nbsp<span><i class="fa-solid fa-check"></i></span></p>
@@ -119,7 +121,7 @@
 
     <hr>
 
-    <div class="footer">
+    <div class="footer" id="about">
         <div class="footer-links-left">
             <ul>
                 <li>FAQ'S</li>
@@ -139,6 +141,6 @@
         </div>
     </div>
 
-    <script src="./assets/index.js"></script>
+    
 </body>
 </html>
