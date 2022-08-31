@@ -26,7 +26,7 @@ function getAllTrendingMovies(){
 
 function renderOneMovie(movies){
     movies.forEach(movie => {
-    console.log(movie)
+    // console.log(movie)
 
     let box=document.createElement('li')
     box.className="trend-list"
@@ -45,3 +45,22 @@ function initialize(){
 
 }
 initialize()
+
+function emailAddress(){
+    let email=document.querySelector('#form')
+    let p=document.createElement('p')
+    
+    email.addEventListener("submit",(e)=>{
+        e.preventDefault()
+        // console.log("done")
+         
+
+         p.textContent='Thank you for subscribing. Please check your Email for more informtion'
+        email.reset()
+        
+
+    })
+    
+    document.querySelector('#form').append(p)
+}
+emailAddress()

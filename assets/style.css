@@ -207,11 +207,15 @@ i{
     padding-top: 70px;
 }
 #email{
-    padding: 8px 60px;
+    padding: 10px 120px;
+    border: none;
+    border-radius: 4px;
     
 }
 #free-trial{
-    padding: 8px 60px;
+    padding: 10px 55px;
     background-color: #E50914;
     color: white;
+    border: none;
+    border-radius: 4px;
 }
