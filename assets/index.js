@@ -58,6 +58,7 @@ function renderOneMovie(movies){
             e.preventDefault()
             // console.log(e.target.review.value)
             comment.textContent=e.target.review.value
+            e.reset()
         })
         let goback=document.querySelector('.close')
         goback.addEventListener('click',()=>{
@@ -97,4 +98,145 @@ function emailAddress(){
 }
 emailAddress()
 
+})
 
+
+
+function  fetchAction(){
+    fetch('https://api.themoviedb.org/3/discover/movie?api_key=d3b69953f79121feef98281a3e589d66&include_adult=false&page=1&with_genres=28')
+    .then(res=>res.json())
+    .then (data=>{
+        getaction(data.results)
+    })
+}
+fetchAction()
+function getaction(actions){
+        let actionImg=document.querySelector('#actimg')
+        actionImg.addEventListener('click',()=>{
+            // console.log('click')
+            actions.forEach(action =>{
+                // console.log(action.title)
+                let actionlist=document.createElement('li')
+                actionlist.className="oklist"
+                actionlist.textContent=action.title
+                let changeheight=document.querySelector('.genre')
+                changeheight.style.height="1300px"; 
+                actionlist.style.margin="10px 0px 0px 0px"
+                
+                document.querySelector('#a').append(actionlist)
+                
+            })
+        
+        })
+}        
+
+function  fetchromance(){
+    fetch('https://api.themoviedb.org/3/discover/movie?api_key=d3b69953f79121feef98281a3e589d66&include_adult=false&page=1&with_genres=10749')
+    .then(res=>res.json())
+    .then (data=>{
+        getromance(data.results)
+    })
+}
+fetchromance()
+function getromance(romances){
+        let romanceimg=document.querySelector('#romimg')
+        romanceimg.addEventListener('click',()=>{
+            // console.log('click')
+            romances.forEach(romance =>{
+                
+                let romancelist=document.createElement('li')
+                romancelist.className="oklist"
+                romancelist.textContent=romance.title
+                let changeheight=document.querySelector('.genre')
+                changeheight.style.height="1300px" 
+                romancelist.style.margin="10px 0px 0px 0px"
+                
+                document.querySelector('#r').append(romancelist)
+                
+            })
+        
+        })
+} 
+function  fetchscifi(){
+    fetch('https://api.themoviedb.org/3/discover/movie?api_key=d3b69953f79121feef98281a3e589d66&include_adult=false&page=1&with_genres=878')
+    .then(res=>res.json())
+    .then (data=>{
+        getscifi(data.results)
+    })
+}
+fetchscifi()
+function getscifi(scifis){
+        let scifiImg=document.querySelector('#sciimg')
+        scifiImg.addEventListener('click',()=>{
+            // console.log('click')
+            scifis.forEach(scifi =>{
+                
+                let scifilist=document.createElement('li')
+                scifilist.className="oklist"
+                scifilist.textContent=scifi.title
+                let changeheight=document.querySelector('.genre')
+                changeheight.style.height="1300px" 
+                scifilist.style.margin="10px 0px 0px 0px"
+                
+                document.querySelector('#s').append(scifilist)
+                
+            })
+        
+        })
+}
+
+function  fetchFamily(){
+    fetch('https://api.themoviedb.org/3/discover/movie?api_key=d3b69953f79121feef98281a3e589d66&include_adult=false&page=1&with_genres=10751')
+    .then(res=>res.json())
+    .then (data=>{
+        getfamily(data.results)
+    })
+}
+fetchFamily()
+function getfamily(families){
+        let familyImg=document.querySelector('#familyimg')
+        familyImg.addEventListener('click',()=>{
+            // console.log('click')
+            families.forEach(family =>{
+                
+                let familylist=document.createElement('li')
+                familylist.className="oklist"
+                familylist.textContent=family.title
+                let changeheight=document.querySelector('.genre')
+                changeheight.style.height="1300px" 
+                familylist.style.margin="10px 0px 0px 0px"
+                
+                document.querySelector('#f').append(familylist)
+                
+            })
+        
+        })
+}
+
+function  fetchhorror(){
+    fetch('https://api.themoviedb.org/3/discover/movie?api_key=d3b69953f79121feef98281a3e589d66&include_adult=false&page=1&with_genres=27')
+    .then(res=>res.json())
+    .then (data=>{
+        gethorror(data.results)
+    })
+}
+fetchhorror()
+function gethorror(horrors){
+        let horrorImg=document.querySelector('#horrorimg')
+        horrorImg.addEventListener('click',()=>{
+            // console.log('click')
+            horrors.forEach(horror =>{
+                
+                let horrorlist=document.createElement('li')
+                horrorlist.className="oklist"
+                horrorlist.textContent=horror.title
+                let changeheight=document.querySelector('.genre')
+                changeheight.style.height="1300px" 
+                horrorlist.style.margin="10px 0px 0px 0px"
+                document.querySelector('#h').append(horrorlist)
+                
+            })
+        
+        })
+}
+       

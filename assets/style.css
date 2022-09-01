@@ -115,7 +115,7 @@ body{
 #trend{
     color: #E50914;
     font-size: 50px;
-    margin-top: 80px;
+    margin-top: 180px;
     padding-left: 780px;
     
 }
@@ -262,7 +262,6 @@ i{
     padding: 100px;
     position: relative;
     box-sizing: border-box;
-    /* overflow: hidden; */
     font-size: 20px;
     padding-top: 100px;
 }
@@ -305,3 +304,9 @@ i{
 #movie-hr{
     margin: 20px 55px auto 55px;
 }
+.oklist {
+    display: flex;
+    
+    
+}
+
