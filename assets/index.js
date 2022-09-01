@@ -50,7 +50,15 @@ function renderOneMovie(movies){
         `
         
         document.querySelector('.tr-list').append(overview)
-        
+        let reviewbtn=document.querySelector('#cmnt-form')
+        let comment=document.createElement('p')
+        comment.className="user-comment"
+        reviewbtn.addEventListener('submit',(e)=>{
+            e.preventDefault()
+            // console.log(e.target.review.value)
+            comment.textContent=e.target.review.value
+        })
+        document.querySelector('#cmnt-form').append(comment)
  
     })
     });

@@ -301,4 +301,7 @@ i{
 #review ,#review-btn{
     padding: 7px 10px;
 }
-
+.user-comment{
+    color: white;
+    padding-top: 15px;
+}
