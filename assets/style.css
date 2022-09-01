@@ -82,9 +82,15 @@ body{
 #gen{
     color: #E50914;
     font-size: 50px;
-    margin-top: 80px;
-    padding-left: 800px;
-    background-color: #171717;
+    margin-top: 120px;
+    padding-left: 830px;
+    
+    
+}
+.hr{
+    margin: 20px 220px auto 220px;
+    color: white;
+    
 }
 .gen-types img{
     width:300px;
@@ -111,7 +117,7 @@ body{
     font-size: 50px;
     margin-top: 80px;
     padding-left: 780px;
-    background-color: #171717;
+    
 }
 .trend-list{
     list-style: none;
@@ -151,7 +157,7 @@ body{
     font-size: 50px;
     margin-top: 80px;
     padding-left: 800px;
-    background-color: #171717;
+    
 }
 .subscription-boxes{
     display: flex;
@@ -182,16 +188,7 @@ body{
     transition-delay: 0.38s;
 }
 
-/* .standard{
-    background-color: #171717;
-    padding: 60px 80px;
-    border-radius: 40px;
-}
-.premium{
-    background-color: #171717;
-    padding: 60px 80px;
-    border-radius: 40px;
-} */
+
 i{
     color: #E50914;
 }
@@ -304,4 +301,7 @@ i{
 .user-comment{
     color: white;
     padding-top: 15px;
+}
+#movie-hr{
+    margin: 20px 55px auto 55px;
 }

@@ -36,6 +36,7 @@ function renderOneMovie(movies){
         <img src="https://image.tmdb.org/t/p/w500${movie.backdrop_path}">
         <div class="info">
         <h1>${movie.title || movie.name}</h1>
+        <hr id="movie-hr">
         <p class="descrip">${movie.overview}<p>
         <div class="user-review">
         <form id="cmnt-form">
@@ -57,6 +58,10 @@ function renderOneMovie(movies){
             e.preventDefault()
             // console.log(e.target.review.value)
             comment.textContent=e.target.review.value
+        })
+        let goback=document.querySelector('.close')
+        goback.addEventListener('click',()=>{
+            overview.style.display='none'
         })
         document.querySelector('#cmnt-form').append(comment)
  
@@ -92,13 +97,4 @@ function emailAddress(){
 }
 emailAddress()
 
-// let genre=document.querySelector(".gen-img")
-// genre.addEventListener('click',(e)=>{
-//     // console.log('click')
 
-// })
-
-// function getGenre(){
-//     co
-// }
-})
