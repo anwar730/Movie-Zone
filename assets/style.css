@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script&family=Poppins&family=Space+Grotesk&display=swap');
 *{
     margin: 0;
 }
 body{
     background-color: #000;
     color: white;
+    font-family: "Poppins";
 }
 
 .nav-bar{
@@ -66,11 +68,11 @@ body{
 }
 #main-desc{
     color: #E50914;
-    font-size: 80px;
+    font-size: 60px;
     padding-top: 200px;
 }
 .desc{
-    font-size: 50px;
+    font-size: 40px;
     
 }
 .genre{
@@ -241,3 +243,62 @@ i{
     color: #E50914;
     
 }
+.overview{
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #E50914;
+    
+}
+
+.overview-inner {
+    background-color:#171717;
+    width: 700px;
+    height: 850px;
+    padding: 100px;
+    position: relative;
+    box-sizing: border-box;
+    /* overflow: hidden; */
+    font-size: 20px;
+    padding-top: 100px;
+}
+
+.close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    outline: none;
+    border: none;
+    font-size: 28px;
+    background-color: transparent;
+    color: white;
+}
+
+
+.innerbox img{
+    margin-right: 20px;
+    width: 500px;
+    height: 300px;
+    border-radius: 18px;
+}
+
+.descrip {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 15px;
+    
+}
+.user-review{
+    padding-top: 30px;
+}
+#review ,#review-btn{
+    padding: 7px 10px;
+}
+

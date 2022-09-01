@@ -24,35 +24,38 @@ function renderOneMovie(movies){
     <p>Vote Count:${movie.vote_count}</p>
     `
     document.querySelector('.tr-list').append(box)
+
+    box.addEventListener("click", () => {
+        // console.log(movie)
+        let overview=document.createElement('p')
+        overview.className="overview"
+        overview.innerHTML=`
+        <div class="overview-inner">
+        <button class="close">X</button>
+        <div class="innerbox">
+        <img src="https://image.tmdb.org/t/p/w500${movie.backdrop_path}">
+        <div class="info">
+        <h1>${movie.title || movie.name}</h1>
+        <p class="descrip">${movie.overview}<p>
+        <div class="user-review">
+        <form id="cmnt-form">
+        <input type="text" id="review" placeholder="Movie Review">
+        <button id ="review-btn"type="submit">Submit</button>
+        <form>
+        
+        </div>
+        </div>
+        </div>
+        </div>
+        `
+        
+        document.querySelector('.tr-list').append(overview)
+        
+ 
+    })
     });
 }
-// function getOverview(){
-//     let overvie=document.getElementById('trend-imgs')
-//     overvie.addEventListener('click', () => {
-//         console.log(done)
-//     })
-// }
-// getOverview()
 
-
-// function trendingInfo(overviews){
-//     let info=document.querySelector('#trend-imgs')
-//     function getEachInfo()  { 
-//         overviews.forEach(overview=>{
-//         let trendBox=document.createElement('div')
-//         trendBox.className="trend-box"
-//         trendBox.innerHTML=`
-//         <img id="trend_box"src ="https://image.tmdb.org/t/p/w500${overview.backdrop_path}">
-//         <p>MOvie OverView: ${overview.overview}
-
-//         `
-//         trendBox.style.display='none'
-//         document.querySelector('.trending').appendChild(trendBox)
-// })}
-//     info.addEventListener('click',(getEachInfo()))
-        
-    
-//     }
 
 
 function initialize(){
